@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Art</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='masonry.pkgd.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+  </head>
+
+  <body>
+    <!-- sidebar for laptop-->
+    <div id="sidebar">
+      <div id="masthead">
+          <a href="/"><img src="/assets/images/bisonBuddha.png" alt="bisonBuddha" ></a>
+      </div>
+
+      <a href="/"><h3 id="sidebar-title">manitobaTime</h3></a>
+      <a href="/simonPelletier" id="sidebar-button">simonPelletier</a><br>
+      <a href="/writings" id="sidebar-button">Writings</a><br>
+      <a href="/photos" id="sidebar-button">Photos</a><br>
+      <a href="/art" id="sidebar-button">Art</a><br>
+    </div>
+
+    <!-- sidebar for phone -->
+    <div id="phoneBar">
+      <div id="masthead">
+          <a href="/"><img src="/assets/images/bisonBuddha.png" alt="bisonBuddha" ></a>
+      </div>
+
+      <div id="barLinks">
+        <h1 id="sidebar-title"><a href="/">manitobaTime</a></h1>
+        <a href="/simonPelletier" id="sidebar-button">simonPelletier</a>
+        <a href="/writings" id="sidebar-button">Writings</a>
+        <a href="/photos" id="sidebar-button">Photos</a>
+        <a href="/art" id="sidebar-button">Art</a>
+      </div>
+    </div>
+
+
+    <div id="content">
+      <div class="grid">
+        <div class="grid-item"><img src="/assets/images/art/sun.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/darkInlet.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/littleLake.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/doubleLandscape.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/saskRoad.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/river.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/aspenStand.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/mittCharacter.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/desert.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/treeReflection.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/thirdElm.jpeg"></div>
+        <div class="grid-item"><img src="/assets/images/art/treesSketched.jpeg"></div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

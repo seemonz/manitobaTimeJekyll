@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Photos</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='masonry.pkgd.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+  </head>
+
+  <body>
+    <!-- sidebar for laptop-->
+    <div id="sidebar">
+      <div id="masthead">
+          <a href="/"><img src="/assets/images/bisonBuddha.png" alt="bisonBuddha" ></a>
+      </div>
+
+      <a href="/"><h3 id="sidebar-title">manitobaTime</h3></a>
+      <a href="/simonPelletier" id="sidebar-button">simonPelletier</a><br>
+      <a href="/writings" id="sidebar-button">Writings</a><br>
+      <a href="/photos" id="sidebar-button">Photos</a><br>
+      <a href="/art" id="sidebar-button">Art</a><br>
+    </div>
+
+    <!-- sidebar for phone -->
+    <div id="phoneBar">
+      <div id="masthead">
+          <a href="/"><img src="/assets/images/bisonBuddha.png" alt="bisonBuddha" ></a>
+      </div>
+
+      <div id="barLinks">
+        <h1 id="sidebar-title"><a href="/">manitobaTime</a></h1>
+        <a href="/simonPelletier" id="sidebar-button">simonPelletier</a>
+        <a href="/writings" id="sidebar-button">Writings</a>
+        <a href="/photos" id="sidebar-button">Photos</a>
+        <a href="/art" id="sidebar-button">Art</a>
+      </div>
+    </div>
+
+
+    <div id="content">
+      <!-- <script type="text/javascript" src="{{ url_for('static', filename='photos.js') }}"></script> -->
+  <script type="text/javascript" src="{{ url_for('static', filename='imagesloaded.pkgd.js') }}"></script>
+
+  <script>
+    $(function()) {
+      var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer'
+      });
+      // layout Masonry after each image loads
+      $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
+      });
+    });
+    </script>
+
+
+
+  <p>Taking pictures. Simple as that.</p>
+
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="assets/images/sexySimon.jpeg">
+    </div>
+    <div class="grid-item-2">
+      <img src="assets/images/JRonTheHill.jpeg">
+    </div>
+    <div class="grid-item-2">
+      <img src="assets/images/saskRoadElm.jpeg">
+    </div>
+    <div class="grid-item">
+      <img src="assets/images/JRGun.jpeg">
+    </div>
+    <div class="grid-item">
+      <img src="assets/images/saskGrass.jpeg">
+    </div>
+    <div class="grid-item">
+      <img src="assets/images/northBarriereLake.jpeg">
+    </div>
+    <div class="grid-item">
+      <img src="assets/images/cucumberRobert.jpeg">
+    </div>
+    <div class="grid-item">
+      <img src="assets/images/stonewallMorning.jpeg">
+    </div>
+    <div class="grid-item">
+      <img src="assets/images/oliAndRock.jpeg">
+    </div>
+    <div class="grid-item">
+      <img src="assets/images/albertaSmoke.jpeg">
+    </div>
+  </div>
+  </body>
+
+</html>

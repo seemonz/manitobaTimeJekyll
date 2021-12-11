@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Writings</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.6.0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='masonry.pkgd.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+  </head>
+
+  <body>
+    <!-- sidebar for laptop-->
+    <div id="sidebar">
+      <div id="masthead">
+          <a href="/"><img src="/assets/images/bisonBuddha.png" alt="bisonBuddha" ></a>
+      </div>
+
+      <a href="/"><h3 id="sidebar-title">manitobaTime</h3></a>
+      <a href="/simonPelletier" id="sidebar-button">simonPelletier</a><br>
+      <a href="/writings" id="sidebar-button">Writings</a><br>
+      <a href="/photos" id="sidebar-button">Photos</a><br>
+      <a href="/art" id="sidebar-button">Art</a><br>
+    </div>
+
+    <!-- sidebar for phone -->
+    <div id="phoneBar">
+      <div id="masthead">
+          <a href="/"><img src="/assets/images/bisonBuddha.png" alt="bisonBuddha" ></a>
+      </div>
+
+      <div id="barLinks">
+        <h1 id="sidebar-title"><a href="/">manitobaTime</a></h1>
+        <a href="/simonPelletier" id="sidebar-button">simonPelletier</a>
+        <a href="/writings" id="sidebar-button">Writings</a>
+        <a href="/photos" id="sidebar-button">Photos</a>
+        <a href="/art" id="sidebar-button">Art</a>
+      </div>
+    </div>
+
+
+    <div id="content">
+      <p>A collection of writings from over the years.</p>
+
+      <br>
+
+      <!-- <ul style="list-style-type: none"> -->
+      <a href="/writings/aStringandaBalloon">A String and a Balloon</a><br>
+      <a href="/writings/twentyThousandLeagues">20,000 Leagues Under the Sea</a><br>
+      <a href="/writings/dontPontificate">Dont Pontificate too Much</a><br>
+      <a href="/static/AntColony Pelletier_Simon.pdf">AntColony Paper</a><br>
+    </div>
+
+  </body>
+
+</html>
